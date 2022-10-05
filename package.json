@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "wiw": "node scripts/run.js"
+    "wiw": "node scripts/run.js",
+    "dply": "npx hardhat run scripts/deploy.js --network mumbai"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,8 @@
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.0",
     "hardhat": "^2.11.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
   }
 }
