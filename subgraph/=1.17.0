@@ -1,0 +1,33 @@
+Progress: resolved 0, reused 1, downloaded 0, added 0
+ WARN  deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+Progress: resolved 38, reused 38, downloaded 0, added 0
+ WARN  deprecated cids@0.7.5: This module has been superseded by the multiformats module
+ WARN  deprecated ipld-dag-pb@0.17.4: This module has been superseded by @ipld/dag-pb and multiformats
+ WARN  deprecated ipld-raw@4.0.1: This module has been superseded by the multiformats module
+ WARN  deprecated ipld-dag-cbor@0.15.3: This module has been superseded by @ipld/dag-cbor and multiformats
+ WARN  deprecated multibase@0.6.1: This module has been superseded by the multiformats module
+ WARN  deprecated multicodec@0.5.7: This module has been superseded by the multiformats module
+ WARN  deprecated promisify-es6@1.0.3: Unmaintained
+ WARN  deprecated peer-info@0.15.1: No longer supported for js-libp2p0.28.0 or later
+Progress: resolved 197, reused 110, downloaded 0, added 0
+ WARN  deprecated har-validator@5.1.5: this library is no longer supported
+ WARN  deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+ WARN  deprecated multicodec@1.0.4: This module has been superseded by the multiformats module
+ WARN  deprecated cids@0.8.3: This module has been superseded by the multiformats module
+ WARN  deprecated multihashing-async@0.8.2: This module has been superseded by the multiformats module
+ WARN  deprecated multihashing-async@0.7.0: This module has been superseded by the multiformats module
+ WARN  deprecated protons@1.2.1: This module is no longer maintained
+ WARN  deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+ WARN  deprecated multibase@0.7.0: This module has been superseded by the multiformats module
+ WARN  deprecated multibase@1.0.1: This module has been superseded by the multiformats module
+ WARN  deprecated libp2p-crypto-secp256k1@0.3.1: Included in libp2p-crypto, use it instead. https://github.com/libp2p/js-libp2p-crypto
+ WARN  deprecated multihashing-async@0.5.2: This module has been superseded by the multiformats module
+ WARN  deprecated multihashing-async@0.6.0: This module has been superseded by the multiformats module
+Progress: resolved 458, reused 457, downloaded 0, added 0
+Packages: +3 -2
++++--
+
+dependencies:
++ prettier 2.7.1
+
+Progress: resolved 473, reused 472, downloaded 0, added 3, done
