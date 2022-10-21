@@ -33,7 +33,9 @@ export default function CreateEvent() {
       link: eventLink,
       image: getRandomImage(),
     };
-
+    //const sleep = ms => new Promise(r => setTimeout(r, ms));
+    //console.log('waiting for a bit');
+    //await sleep(15000);
     try {
       const response = await fetch("/api/store-event-data", {
         method: "POST",
