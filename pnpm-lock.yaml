@@ -18,6 +18,7 @@ specifiers:
   chai: ^4.2.0
   dotenv: ^16.0.3
   ethers: ^5.4.7
+  graph: ^0.2.0
   hardhat: ^2.11.2
   hardhat-gas-reporter: ^1.0.8
   solidity-coverage: ^0.8.1
@@ -42,6 +43,7 @@ dependencies:
   chai: 4.3.6
   dotenv: 16.0.3
   ethers: 5.7.1
+  graph: 0.2.0
   hardhat-gas-reporter: 1.0.9_hardhat@2.11.2
   solidity-coverage: 0.8.2_hardhat@2.11.2
   ts-node: 10.9.1_p2zphemn5bk5inasc666rmprwi
@@ -2760,6 +2762,10 @@ packages:
   /graceful-fs/4.2.10:
     resolution: {integrity: sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==}
 
+  /graph/0.2.0:
+    resolution: {integrity: sha512-JABlOLcRKDylHil7DonITryjN8EyMwjzfOVwuUq0UaOK+fnR+cYJ2j5dS4YP+d1QPXQ9LNdL1yYJA8I1B77E1w==}
+    dev: false
+
   /graphql/15.5.0:
     resolution: {integrity: sha512-OmaM7y0kaK31NKG31q4YbD2beNYa6jBBKtMFT6gLYJljHLJr42IqJ8KX08u3Li/0ifzTU5HjmoOOrwa5BRLeDA==}
     engines: {node: '>= 10.x'}
@@ -4457,6 +4463,7 @@ packages:
     resolution: {integrity: sha512-N9iVG+CGJsI4b4ZGazjwLnxErD2d9Pe4DPvvXSxYA9tFNu8ymXME4Qs5HIQ0LMJpNM7zj+m0NlNnNeqFpKzqnA==}
     deprecated: Unmaintained
     dev: false
+    bundledDependencies: []
 
   /protocol-buffers-schema/3.6.0:
     resolution: {integrity: sha512-TdDRD+/QNdrCGCE7v8340QyuXd4kIWIgapsE2+n/SaGiSSbomYl4TjHlvIoCWRpE7wFt02EpB35VVA2ImcBVqw==}

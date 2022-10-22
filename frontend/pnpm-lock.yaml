@@ -16,6 +16,7 @@ specifiers:
   eslint-config-next: 12.0.7
   eslint-config-prettier: ^8.5.0
   ethers: ^5.6.6
+  graph: ^0.2.0
   graphql: ^16.5.0
   next: 12.0.7
   node-fetch: '*'
@@ -40,6 +41,7 @@ dependencies:
   '@rainbow-me/rainbowkit': 0.2.5_4l4v3zgwcst3575e7jh6erw53u
   '@typescript-eslint/parser': 4.33.0_3rubbgt5ekhqrcgx4uwls3neim
   ethers: 5.7.1
+  graph: 0.2.0
   graphql: 16.6.0
   next: 12.0.7_7zkbjz6d46tpcbbta4lk5n6n6i
   node-fetch: 2.6.7
@@ -5733,6 +5735,10 @@ packages:
 
   /graceful-fs/4.2.10:
     resolution: {integrity: sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==}
+
+  /graph/0.2.0:
+    resolution: {integrity: sha512-JABlOLcRKDylHil7DonITryjN8EyMwjzfOVwuUq0UaOK+fnR+cYJ2j5dS4YP+d1QPXQ9LNdL1yYJA8I1B77E1w==}
+    dev: false
 
   /graphql-tag/2.12.6_graphql@16.6.0:
     resolution: {integrity: sha512-FdSNcu2QQcWnM2VNvSCCDCVS5PpPqpzgFT8+GXzqJuoDd0CBncxCY278u4mhRO7tMgo2JjgJA5aZ+nWSQ/Z+xg==}

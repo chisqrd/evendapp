@@ -22,6 +22,7 @@ export function handleNewEventCreated(event: NewEventCreated): void {
     newEvent.totalConfirmedAttendees = integer.ZERO;
 
     let metadata = ipfs.cat(event.params.eventDataCID + "/data.json");
+    
 
     if (metadata) {
       const value = json.fromBytes(metadata).toObject();
@@ -43,17 +44,16 @@ export function handleNewEventCreated(event: NewEventCreated): void {
           newEvent.link = link.toString();
         }
 
-        if (imagePath) {
+        if(imagePath){
           const imageURL =
-            "https://ipfs.io/ipfs/" +
-            event.params.eventDataCID +
-            imagePath.toString();
+      "https://ipfs.io/ipfs/" + event.params.eventDataCID + imagePath.toString();
           newEvent.imageURL = imageURL;
         } else {
-          const fallbackURL =
-            "https://ipfs.io/ipfs/bafybeibssbrlptcefbqfh4vpw2wlmqfj2kgxt3nil4yujxbmdznau3t5wi/event.png";
+          const fallbackURL = "https://ipfs.io/ipfs/bafybeibssbrlptcefbqfh4vpw2wlmqfj2kgxt3nil4yujxbmdznau3t5wi/event.png";
           newEvent.imageURL = fallbackURL;
         }
+
+        
       }
     }
 
@@ -99,12 +99,10 @@ export function handleConfirmedAttendee(event: ConfirmedAttendee): void {
     newConfirmation.attendee = account.id;
     newConfirmation.event = thisEvent.id;
     newConfirmation.save();
-
     thisEvent.totalConfirmedAttendees = integer.increment(
       thisEvent.totalConfirmedAttendees
     );
     thisEvent.save();
-
     account.totalAttendedEvents = integer.increment(
       account.totalAttendedEvents
     );
