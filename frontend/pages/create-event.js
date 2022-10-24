@@ -26,7 +26,7 @@ export default function CreateEvent() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-
+    //console.log('here',eventName,eventDescription);
     const body = {
       name: eventName,
       description: eventDescription,
@@ -83,6 +83,9 @@ export default function CreateEvent() {
         setEventID(wait.events[0].args[0]);
         setSuccess(true);
         setLoading(false);
+        
+        setEventDescription(eventDescription);
+        setEventName(eventName);
         setMessage("Your event has been created successfully.");
       } else {
         console.log("Error getting contract.");
