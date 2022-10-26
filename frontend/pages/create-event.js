@@ -26,16 +26,14 @@ export default function CreateEvent() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    //console.log('here',eventName,eventDescription);
+
     const body = {
       name: eventName,
       description: eventDescription,
       link: eventLink,
       image: getRandomImage(),
     };
-    //const sleep = ms => new Promise(r => setTimeout(r, ms));
-    //console.log('waiting for a bit');
-    //await sleep(15000);
+
     try {
       const response = await fetch("/api/store-event-data", {
         method: "POST",
@@ -83,9 +81,6 @@ export default function CreateEvent() {
         setEventID(wait.events[0].args[0]);
         setSuccess(true);
         setLoading(false);
-        
-        setEventDescription(eventDescription);
-        setEventName(eventName);
         setMessage("Your event has been created successfully.");
       } else {
         console.log("Error getting contract.");
